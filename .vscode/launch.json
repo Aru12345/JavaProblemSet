@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Age",
+            "request": "launch",
+            "mainClass": "Age",
+            "projectName": "JavaProbs_6943674c"
+        },
+        {
+            "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "Demo",
+            "projectName": "JavaProbs_6943674c"
+        },
+        {
+            "type": "java",
+            "name": "FtoM",
+            "request": "launch",
+            "mainClass": "FtoM",
+            "projectName": "JavaProbs_6943674c"
+        },
+        {
+            "type": "java",
+            "name": "MailLayout",
+            "request": "launch",
+            "mainClass": "MailLayout",
+            "projectName": "JavaProbs_6943674c"
+        }
+    ]
+}
