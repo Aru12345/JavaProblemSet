@@ -14,24 +14,25 @@ public class TrafficLight {
         lights.setSize(127, 400);
         lights.setTitle("Traffic Lights");
         lights.setVisible(true);
-
+        lights.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
 
 // The class extends JFrame.
 class Drawing extends JFrame {
-    final int WIDTH = 120,
-            HEIGHT = 120;
+    final int WIDTH = 120, HEIGHT = 120;
     private Color redShade = new Color(239, 1, 0);
     private Color yellowShade = new Color(181, 163, 0);
     private Color greenShade = new Color(76, 177, 23);
 
     private MyDrawingPanel drawingPanel = new MyDrawingPanel(WIDTH, HEIGHT, redShade, yellowShade, greenShade);
 
+    // Adds MyDrawingPanel to Drawing
     public Drawing() {
         add(drawingPanel);
     };
 
+    // The class extends JPanel to draw on.
     private class MyDrawingPanel extends JPanel {
         private int width, height;
         private Color red;
@@ -49,6 +50,7 @@ class Drawing extends JFrame {
             this.green = green;
         }
 
+        // The paintComponenet method is called by Java to produce graphical output.
         public void paintComponent(Graphics g) {
 
             g.setColor(this.red);
@@ -61,6 +63,6 @@ class Drawing extends JFrame {
             g.drawOval(5, 249, this.width, this.height);
             g.fillOval(5, 249, this.width, this.height);
 
-        }
-    }
+        }  
+    }   
 }
